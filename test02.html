@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Test page</title>
+  <style>
+    #header {
+      background-color: #ffff99;
+      border: 1px #000 solid;
+    }
+
+    #nav {
+      background-color: #ccffcc;
+      border: 1px #000 solid;
+    }
+
+    #main-algo {
+      background-color: #fff;
+      border: 1px #000 solid;
+    }
+
+    #footer {
+      background-color: #ffcccc;
+    }
+  </style>
+</head>
+
+<body id="srp">
+  <div id="doc">
+    <div id="header">
+      <p>Welcome to the website</p>
+    </div>
+    <div id="layout">
+      <nav id="nav">
+          <p>menu 1</p>
+          <p>menu 2</p>
+          <p>menu 3</p>
+      </nav>
+      <div id="main-algo">
+        <div id="algo-bd">
+          <div class="list">
+            <h1>NBA Team List</h1>
+            <ol>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Atlanta+Hawks"
+                    data-team="Atlanta Hawks">Atlanta Hawks</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Boston+Celtics"
+                    data-team="Boston Celtics">Boston Celtics</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Brooklyn+Nets"
+                    data-team="Brooklyn Nets">Brooklyn Nets</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Charlotte+Hornets"
+                    data-team="Charlotte Hornets">Charlotte Hornets</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Chicago+Bulls"
+                    data-team="Chicago Bulls">Chicago Bulls</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Cleveland+Cavaliers"
+                    data-team="Cleveland Cavaliers">Cleveland Cavaliers</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Dallas+Mavericks"
+                    data-team="Dallas Mavericks">Dallas Mavericks</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Denver+Nuggets"
+                    data-team="Denver Nuggets">Denver Nuggets</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Detroit+Pistons"
+                    data-team="Detroit Pistons">Detroit Pistons</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Golden+State+Warriors"
+                    data-team="Golden State Warriors">Golden State Warriors</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Houston+Rockets"
+                    data-team="Houston Rockets">Houston Rockets</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Indiana+Pacers"
+                    data-team="Indiana Pacers">Indiana Pacers</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Los+Angeles+Clippers"
+                    data-team="Los Angeles Clippers">Los Angeles Clippers</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Los+Angeles+Lakers"
+                    data-team="Los Angeles Lakers">Los Angeles Lakers</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Memphis+Grizzlies"
+                    data-team="Memphis Grizzlies">Memphis Grizzlies</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Miami+Heat" data-team="Miami Heat">Miami
+                    Heat</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Milwaukee+Bucks"
+                    data-team="Milwaukee Bucks">Milwaukee Bucks</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Minnesota+Timberwolves"
+                    data-team="Minnesota Timberwolves">Minnesota Timberwolves</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=New+Orleans+Pelicans"
+                    data-team="New Orleans Pelicans">New Orleans Pelicans</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=New+York+Knicks"
+                    data-team="New York Knicks">New York Knicks</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Oklahoma+City+Thunder"
+                    data-team="Oklahoma City Thunder">Oklahoma City Thunder</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Orlando+Magic"
+                    data-team="Orlando Magic">Orlando Magic</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Philadelphia+76ers"
+                    data-team="Philadelphia 76ers">Philadelphia 76ers</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Phoenix+Suns"
+                    data-team="Phoenix Suns">Phoenix Suns</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Portland+Trail+Blazers"
+                    data-team="Portland Trail Blazers">Portland Trail Blazers</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Sacramento+Kings"
+                    data-team="Sacramento Kings">Sacramento Kings</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=San+Antonio+Spurs"
+                    data-team="San Antonio Spurs">San Antonio Spurs</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Toronto+Raptors"
+                    data-team="Toronto Raptors">Toronto Raptors</a></div>
+              </li>
+              <li>
+                <div><a href="https://search.yahoo.com/search?p=Utah+Jazz" data-team="Utah Jazz">Utah
+                    Jazz</a></div>
+              </li>
+              <li class="carousel-itm lst">
+                <div><a href="https://search.yahoo.com/search?p=Washington+Wizards"
+                    data-team="Washington Wizards">Washington Wizards</a></div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="logo">
+            <h1>NBA Team Logo</h1>
+            <ul>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Atlanta+Hawks"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/9_2nBP1KPETFCdYE_mUhUw--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/dh/ap/default/160427/Atlanta-Hawks300.png.cf.jpg"
+                      data-team="Atlanta Hawks"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Boston+Celtics"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/SSfQVlE56l113SjtZCMpuw--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/P5KLOq_xppk8fSEXYrefWw--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/bos.gif"
+                      data-team="Boston Celtics"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Brooklyn+Nets"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/_AEm3Saszz.cgZ83DgSIvw--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/IxstD9pBoPYYhMYGuy9CbQ--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/bro.gif"
+                      data-team="Brooklyn Nets"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Charlotte+Hornets"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/5uTN6Q4yZC5AyivkdK2GqQ--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/WtD246PSSsXoEZZQrU06lw--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/dh/ap/nba/logos/charlotte_hornets.png.cf.jpg"
+                      data-team="Charlotte Hornets"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Chicago+Bulls"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/A00iNN_.OlBSVoYsxYCzbg--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/vVhTdZPThBrHT5j4RpBE2A--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/chi.gif"
+                      data-team="Chicago Bulls"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Cleveland+Cavaliers"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/5yNqX7AlL0Y7r.pyB9q9QA--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/s8CtrixuKK2R2oY_Dsrc1w--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/cle.gif"
+                      data-team="Cleveland Cavaliers"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Dallas+Mavericks"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/wYuHI1hG4hVrQ0S1Y8LNuA--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/pniwWrM.EJkWdqusmwmMNA--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/dal.gif"
+                      data-team="Dallas Mavericks"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Denver+Nuggets"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/nkq3uestLoh9_kjaBgtXbg--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/rxoMYVU2fDLKVFDG0GtoGw--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/den.gif"
+                      data-team="Denver Nuggets"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Detroit+Pistons"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/VpXGn4IL3ZPzSJLThRR_QQ--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/XsDs2jUoRM_p_uW.vJShJw--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/det.gif"
+                      data-team="Detroit Pistons"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Golden+State+Warriors"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/K71DvoY8B97PjXVD26op0g--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/TJQjJIo_U5OQ8QRTmOWbKQ--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/gsw.gif"
+                      data-team="Golden State Warriors"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Houston+Rockets"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/9JjZg.Lfwke8sXvS3t2y1g--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/1MypUshJqq2BrVf_OgJ.jw--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/hou.gif"
+                      data-team="Houston Rockets"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Indiana+Pacers"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/MjEIzQAZjEdwk6M_HM3rTQ--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/dfgzo_L9tJfxY94cOwGXtA--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/ind.gif"
+                      data-team="Indiana Pacers"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Los+Angeles+Clippers"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/lwctXE_9wRpsLxc6yqn1ig--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/dh/ap/default/150914/LA-Clippers.png.cf.jpg"
+                      data-team="Los Angeles Clippers"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Los+Angeles+Lakers"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/UEEca5QgPtCC4uPFIvzb.A--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/Z2_if4k6cPPAEa3ZveMBRQ--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/lal.gif"
+                      data-team="Los Angeles Lakers"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Memphis+Grizzlies"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/aB72t2opF.7kQBPrPASlsg--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/VnJ7QdvFKec1t8qTURAkpA--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/mem.gif"
+                      data-team="Memphis Grizzlies"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Miami+Heat"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/4XXeC5L2u1ORKWJvCbFQCQ--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/mxPtSGk.EsMxgETX2QB9Kw--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/mia.gif"
+                      data-team="Miami Heat"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Milwaukee+Bucks"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/wxsMqamgoZ4yChusaYlbKw--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/dh/ap/default/160427/Milwakee-Bucks-300.png.cf.jpg"
+                      data-team="Milwaukee Bucks"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb "
+                    href="https://search.yahoo.com/search?p=Minnesota+Timberwolves"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/.fgkqnlosiTvlF27t8CbqA--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/lGsjmuD4BRmTDQUNwkvOrw--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/min.gif"
+                      data-team="Minnesota Timberwolves"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=New+Orleans+Pelicans"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/f2o5CVZPz87J0x2KbXvTyQ--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/W_foX6sI0TA07tW6sCX68Q--/YXBwaWQ9eXZpZGVvO2ZpPWZpbGw7aD01MDA7cT04MDt3PTUwMA--/http://l.yimg.com/dh/ap/nba/logos/new_orleans_pelicans.png.cf.jpg"
+                      data-team="New Orleans Pelicans"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=New+York+Knicks"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/wdHYrQxmIL2Q1GhttJrBTQ--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/GgaDCy5BL8_Lgc5G7oLxww--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/nyk.gif"
+                      data-team="New York Knicks"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Oklahoma+City+Thunder"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/eNHGCIMLM6_GO5NUtZx6qg--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/4lW4OZXjy3de9E6voxvFAA--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/okc.gif"
+                      data-team="Oklahoma City Thunder"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Orlando+Magic"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/Q9cBrkp2m.d7HCcap1MEgg--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/nn73Ljg2n2GGqWD6kj8Kew--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/orl.gif"
+                      data-team="Orlando Magic"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Philadelphia+76ers"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/rffqMv7WNb8iyz32z_n1pA--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/usAP6D7stVroCR1Mg_BGbQ--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/https://sp.yimg.com/j/assets/ipt/philadelphia-76ers_500.png.cf.jpg"
+                      data-team="Philadelphia 76ers"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Phoenix+Suns"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/mLVbZ_akOtEA99E0y28Tww--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131113/84/500x500/pho_500x500.png.cf.jpg"
+                      data-team="Phoenix Suns"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb "
+                    href="https://search.yahoo.com/search?p=Portland+Trail+Blazers"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/e1Mh4MPU6XsEvstZ8qeeYA--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/sgefqMEJ1HsmKZZNmruSIA--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/por.gif"
+                      data-team="Portland Trail Blazers"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Sacramento+Kings"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/SD.7dhZwCj_B05utm2kbaQ--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7dz0xNDA-/https://sp.yimg.com/j/assets/ipt/SacramentoKings.png.cf.jpg"
+                      data-team="Sacramento Kings"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=San+Antonio+Spurs"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/XFUHIwd6gQ.APLut8hI58g--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/wJ_i05upk_pbjo5KzW_XlQ--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/http://l.yimg.com/xe/i/us/sp/v/nba/teams/20131107/84/500x500/sas.gif"
+                      data-team="San Antonio Spurs"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Toronto+Raptors"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/cbKFPcDz_zoYu4SjamnQdw--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/dh/ap/default/160427/Toronto-Raptors-300.png.cf.jpg"
+                      data-team="Toronto Raptors"></a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Utah+Jazz"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/wgnsFzEpWbjXTpVru8A27g--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7c209MTt3PTE0MA--/http://l.yimg.com/iu/api/res/1.2/ZDM8b_K77c2tJuPLTyHSmg--/YXBwaWQ9c2hhcmVkO2ZpPWZpbGw7aD01MDA7cT0xMDA7dz01MDA-/https://sp.yimg.com/j/assets/ipt/UtahJazz.png.cf.jpg"
+                      data-team="Utah Jazz"></a>
+                </div>
+              </li>
+              <li class="">
+                <div>
+                  <a class="thmb " href="https://search.yahoo.com/search?p=Washington+Wizards"><img
+                      class="thumbnail" width="140" height="140"
+                      src="https://s.yimg.com/fz/api/res/1.2/oqir.rlU.TqnjGCe0O7fvQ--/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0xNDA7cHhvZmY9MDtweW9mZj0wO3E9OTU7dz0xNDA-/https://sp.yimg.com/j/assets/ipt/WashingtonWizards.png.cf.jpg"
+                      data-team="Washington Wizards"></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <p>Copyright (C) John Doe 2017</p>
+      </footer>
+    </div>
+  </div>
+  <script>
+  </script>
+</body>
+
+</html>
